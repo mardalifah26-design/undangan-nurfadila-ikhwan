@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f1e8;
+    color:#4a3428;
+    text-align:center;
+}
+
+
+/* COVER */
+
+.cover{
+
+    height:100vh;
+
+    background-image:url("assets/foto.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+    rgba(55,30,15,.55),
+    rgba(55,30,15,.65)
+    );
+
+}
+
+
+
+.content{
+
+    position:relative;
+
+    color:white;
+
+    padding:20px;
+
+    animation:muncul 2s ease;
+
+}
+
+
+.small{
+
+    letter-spacing:4px;
+
+    font-size:15px;
+
+}
+
+
+h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:55px;
+
+    line-height:1.1;
+
+    margin:20px 0;
+
+}
+
+
+.date{
+
+    font-size:20px;
+
+}
+
+
+.guest{
+
+    margin-top:30px;
+
+    font-size:16px;
+
+}
+
+
+
+.button{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:13px 35px;
+
+    background:#c49a3a;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+
+
+.button:hover{
+
+    background:#9b7628;
+
+}
+
+
+
+/* ISI UNDANGAN */
+
+
+section{
+
+    padding:70px 20px;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+section h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:38px;
+
+    color:#9b7628;
+
+    margin-bottom:25px;
+
+}
+
+
+
+section p{
+
+    margin:15px auto;
+
+    line-height:1.8;
+
+}
+
+
+
+.foto img{
+
+    width:260px;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid #c49a3a;
+
+    margin:30px;
+
+}
+
+
+
+/* ANIMASI */
+
+
+@keyframes muncul{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* HP */
+
+
+@media(max-width:600px){
+
+h1{
+
+font-size:40px;
+
+}
+
+
+section h2{
+
+font-size:32px;
+
+}
+
+}
